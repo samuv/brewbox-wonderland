@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Row from './Layout/Row';
+import Box from './Layout/Box';
 import logo from './brewbox-logo.svg';
 import './App.css';
 
@@ -8,18 +10,20 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
+        <div className="App-content">
+          <Row>
+            <Box>
+              Il mio contenuto
+            </Box>
+            <Box>
+              Il secondo contenuto
+            </Box>
+            <Box>
+              Il terzo contenuto
+            </Box>
+          </Row>
+        </div>
       </div>
     );
   }
