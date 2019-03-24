@@ -10,7 +10,21 @@ body {
   /* animation: App-logo-spin infinite 20s linear; */
   height: 10vmin;
   max-width: 500px;
-  padding: 30px 0;
+  padding-top: 30px;
+}
+
+.App-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+}
+
+ .App-nav li {
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 .App-header {
